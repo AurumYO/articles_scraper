@@ -32,7 +32,7 @@ def scrape_articles(urls=None, domain=None):
                     links = article.find_all("a")
 
                     for link in links:
-                        title = link.string if link.string else link["href"]
+                        title = link.string.strip('"') if link.string else link["href"]
                         link = SCRAPPING_DOMAIN + link["href"]
                         obj, created = Article.objects.get_or_create(
                             title=title,
