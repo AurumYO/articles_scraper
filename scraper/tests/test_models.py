@@ -13,8 +13,8 @@ class ArticleTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Create a user for testing
-        cls.article = G(Article, title='Rose Rosalind')
+        cls.article = G(Article, title="Rose Rosalind")
 
     def test_it_has_string_representation(self):
         # test __str__ method for Band model
-        self.assertEqual(str(self.article), 'Rose Rosalind')
+        self.assertEqual(str(self.article), "Rose Rosalind")

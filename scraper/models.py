@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Article(models.Model):
     title = models.CharField(max_length=255)
     url = models.URLField(unique=True)
@@ -11,4 +12,4 @@ class Article(models.Model):
         return self.title
 
     class Meta:
-        ordering = ['-date_scraped']
+        ordering = ["-date_scraped"]
