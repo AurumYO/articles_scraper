@@ -1,0 +1,58 @@
+# Python related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+
+# Virtual Environment
+venv/
+env/
+
+# Django specific files
+*.log
+*.pot
+*.py[co]
+db.sqlite3
+*.sqlite3
+
+# Django migrations
+**/migrations/
+
+# Media and Static files
+media/
+staticfiles/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# System specific files
+.DS_Store
+Thumbs.db
+
+# Pipenv and other Python dependencies
+Pipfile.lock
+poetry.lock
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+*.cover
+*.py,cover
+.hypothesis/
+
+# pytest
+.cache
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
